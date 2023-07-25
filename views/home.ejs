@@ -1,0 +1,19 @@
+<%- include("partials/header"); -%>
+
+<h1 class="h1"> Publish your passions, your way </h1>
+
+    <p class="p"> <%= StartingContent %> </p>
+<% console.log(arr); %>
+<% arr.forEach(function(item){ %> 
+	<h1 class="h1"> <%= item.x %> </h1>
+    <p class="p">
+     <%= item.y.substring(0,100)+"..." %> 
+      <a href="/arr/<%= item.x %>">Read more   </a> 
+     </p> 
+<% }) %>
+
+
+
+<%- include("partials/footer"); -%>
+
+
